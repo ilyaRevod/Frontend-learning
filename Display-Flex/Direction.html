@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <style>
+    .container {
+      color: white;
+      border: 5px solid black;
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+    }
+
+    .container>div {
+      flex-basis: 300px;
+    }
+
+    .red {
+      background-color: #e73e3b;
+    }
+
+    .yellow {
+      background-color: #e7cb3f;
+    }
+
+    .orange {
+      background-color: #df841c;
+    }
+
+    .green {
+      background-color: #5cb436;
+    }
+
+    .purple {
+      background-color: #cf3ef0;
+    }
+
+    .blue {
+      background-color: #3625a7;
+    }
+
+    .indigo {
+      background-color: #4146a0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="purple">Purple</div>
+    <div class="yellow">Yellow</div>
+    <div class="blue">Blue</div>
+    <div class="green">Green</div>
+    <div class="indigo">Indigo</div>
+  </div>
+
+</body>
+
+</html>
