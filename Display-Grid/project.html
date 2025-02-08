@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project with Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      height: 746px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      background-color: black;
+    }
+
+    .blue {
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+      border-bottom: 10px solid black;
+    }
+
+    .red {
+      background-color: #E72F24;
+      height: 414px;
+      width: 320px;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .white-1 {
+      grid-area: 1 / 2 / 1 / -1;
+    }
+
+    .white-2 {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .white-3 {
+      grid-area: 2 / 2 / 4 / 4;
+    }
+
+    .white-4 {
+      grid-area: 3 / 4 / -1;
+    }
+
+    .black {
+      background-color: #232629;
+      height: 20px;
+      width: 153px;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      height: 20px;
+      width: 198px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card red"></div>
+    <div class="card white white-1"></div>
+    <div class="card white white-2"></div>
+    <div class="card white white-3"></div>
+    <div class="card blue"></div>
+    <div class="card white white-4"></div>
+    <div class="card white"></div>
+    <div class="card yellow"></div>
+    <div class="card black"></div>
+  </div>
+</body>
+
+</html>
