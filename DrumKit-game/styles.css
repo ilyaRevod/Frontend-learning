@@ -1,0 +1,80 @@
+body {
+  text-align: center;
+  background-color: #3a1f41;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  text-shadow: 3px 3px #da0463;
+}
+
+footer {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 3px 0px #da0463;
+}
+
+.set {
+  margin: 10% auto;
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.drum {
+  outline: none;
+  border: 2px solid #b8004d;
+  font-size: 5rem;
+  line-height: 2;
+  font-weight: 900;
+  color: #da0463;
+  text-shadow: 3px 0 #dbedf3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+@media (max-width: 1024px) {
+  .set {
+    grid-template-columns: repeat(4, 150px);
+  }
+}
+
+@media (max-width: 768px) {
+  .set {
+    grid-template-columns: repeat(3, 120px);
+    gap: 15px;
+  }
+  .drum {
+    width: 120px;
+    height: 120px;
+    font-size: 4rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .set {
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+  }
+  .drum {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+}
